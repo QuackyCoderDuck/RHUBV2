@@ -14,11 +14,36 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 2
 })
-
+--Tabs
 local General = Window:MakeTab({
 	Name = "General",
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
   })
-  
+ --Toggles
+ General:AddSlider({
+	Name = "Slider",
+	Min = 0,
+	Max = 1000,
+	Default = 25,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		local speed = (Value)
+	end    
+})
+General:AddToggle({
+	Name = "Infinite Yield",
+	Default = false,
+	Callback = function(Value)
+		print(Value)
+	end    
+})
+
+
+
+
+
+OrionLib:Init()
   
