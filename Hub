@@ -39,7 +39,7 @@ General:AddButton({
 			Image = "rbxassetid://4483345998",
 			Time = 2
 	end    
-})
+}) 
 
 
 
