@@ -1,0 +1,24 @@
+print ("Loading Marker's Hub!");
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/QuackyCoderDuck/Library/main/Hub-Frame')))()
+OrionLib:MakeNotification({
+	Name = "Loading!",
+	Content = "Loading...",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+local Window = OrionLib:MakeWindow({Name = "Marker's Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+print ("Loaded Marker's Hub!");
+OrionLib:MakeNotification({
+	Name = "Loaded!!",
+	Content = "Loaded! Enjoy the Hub!",
+	Image = "rbxassetid://4483345998",
+	Time = 2
+})
+
+local General = Window:MakeTab({
+	Name = "General",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+  })
+  
+  
