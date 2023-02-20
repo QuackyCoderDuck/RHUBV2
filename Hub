@@ -22,7 +22,7 @@ local General = Window:MakeTab({
   })
  --General Stuff
 General:AddButton({
-	Name = "Button!",
+	Name = "Infinite Yield",
 	Callback = function()
       		print("button pressed")
   	end    
