@@ -26,18 +26,9 @@ General:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
 	OrionLib:MakeNotification({
-			Name = "Loading Infinite Yield!",
-			Content = "Infinite Yield Loading.",
-			Image = "rbxassetid://4483345998",
-			Time = 2
-      		print("Infinite Yield Launched")
+		print("Infinite Yield Launched")
 		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-		OrionLib:MakeNotification({
-			Name = "Loaded!!",
-			Content = "Infinite Yield Loaded.",
-			Image = "rbxassetid://4483345998",
-			Time = 2
-	end    
+		end    
 }) 
 
 
