@@ -22,7 +22,6 @@ local General = Window:MakeTab({
   })
  --General Stuff
  
-})
 General:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
