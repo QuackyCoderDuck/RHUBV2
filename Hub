@@ -20,28 +20,26 @@ local General = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
   })
- --Toggles
- General:AddSlider({
-	Name = "Slider",
-	Min = 0,
-	Max = 1000,
-	Default = 25,
-	Color = Color3.fromRGB(255,255,255),
-	Increment = 1,
-	ValueName = "Speed",
-	Callback = function(Value)
-		local speed = (Value)
-	end    
+ --General Stuff
+ 
 })
-General:AddToggle({
+General:AddButton({
 	Name = "Infinite Yield",
-	Default = false,
-	Callback = function(Value)
-		print(Value)
+	Callback = function()
+	OrionLib:MakeNotification({
+			Name = "Loading Infinite Yield!",
+			Content = "Infinite Yield Loading.",
+			Image = "rbxassetid://4483345998",
+			Time = 2
+      		print("Infinite Yield Launched")
+		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		OrionLib:MakeNotification({
+			Name = "Loaded!!",
+			Content = "Infinite Yield Loaded.",
+			Image = "rbxassetid://4483345998",
+			Time = 2
 	end    
 })
-
-
 
 
 
