@@ -24,8 +24,7 @@ local General = Window:MakeTab({
  General:AddButton({
 	Name = "Infinite Yield",
 	Callback = function()
-      		print("Loading...");
-		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
-		print("Loaded");
-  	end    
+      	print("Loading...");
+	loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))();
+	end    
 })
