@@ -1,4 +1,4 @@
-OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/QuackyCoderDuck/Library/main/Hub-Framelocal')))()
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "Loading!",
 	Content = "Loading the hub! Please wait!!",
@@ -6,7 +6,7 @@ OrionLib:MakeNotification({
 	Time = 5
 })
 --HUB
-local Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+local Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, IntroEnabled=true, IntroText = "Galaxy Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 --Loaded
 OrionLib:MakeNotification({
 	Name = "Loaded",
