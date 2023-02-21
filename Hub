@@ -1,72 +1,28 @@
-print ("Loading Marker's Hub!");
-getgenv().SecureMode = true
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
-Rayfield:Notify({
-   Title = "Loading...",
-   Content = "Loaded! Please enter key!",
-   Duration = 6.5,
-   Image = 4483362458,
-   Actions = { -- Notification Buttons
-      Ignore = {
-         Name = "Okay!",
-         Callback = function()
-         print("The user tapped Okay!")
-      end
-   },
-},
+OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/QuackyCoderDuck/Library/main/Hub-Framelocal')))()
+OrionLib:MakeNotification({
+	Name = "Loading!",
+	Content = "Loading the hub! Please wait!!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
-local Window = Rayfield:CreateWindow({
-   Name = "Marker's Hub!",
-   LoadingTitle = "Marker's Hub",
-   LoadingSubtitle = "by Marker",
-   ConfigurationSaving = {
-      Enabled = true,
-      FolderName = Marker's Hub, -- Create a custom folder for your hub/game
-      FileName = "MarkerConfigSave"
-   },
-   Discord = {
-      Enabled = false,
-      Invite = "SIRIUS", -- The Discord invite code, do not include discord.gg/. E.g. discord.gg/ABCD would be ABCD.
-      RememberJoins = true -- Set this to false to make them join the discord every time they load it up
-   },
-   KeySystem = true, -- Set this to true to use our key system
-   KeySettings = {
-      Title = "Hub Key System",
-      Subtitle = "Key System",
-      Note = "Join the discord (https://discord.gg/PQa6dJq8yT)",
-      FileName = "MarkerKey",
-      SaveKey = true,
-      GrabKeyFromSite = false, -- If this is true, set Key below to the RAW site you would like Rayfield to get the key from
-      Key = "TEST_KEY"
-   }
+--HUB
+local Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+--Loaded
+OrionLib:MakeNotification({
+	Name = "Loaded",
+	Content = "Enjoy the Hub!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
 })
-local Tab = Window:CreateTab("General", 4483362458) -- Title, Image
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-Rayfield:LoadConfiguration()
+--General
+local General = Window:MakeTab({
+	Name = "General",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+General:AddButton({
+	Name = "Test Button 101",
+	Callback = function()
+      		print("TEST PASSED")
+  	end    
+})
