@@ -21,9 +21,3 @@ local General = Window:MakeTab({
 	PremiumOnly = false
   })
  --General Stuff
-General:AddButton({
-	Name = "Speed",
-	Callback = function()
-      		local speed = 300
-  	end    
-})
