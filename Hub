@@ -1,22 +1,28 @@
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
-	Name = "Loading!",
-	Content = "Loading the hub! Please wait!!",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+    Name = "Loading!",
+    Content = "Loading the hub! Please wait!!",
+    Image = "rbxassetid://4483345998",
+    Time = 5
 })
 --HUB
 local Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, IntroEnabled=true, IntroText = "Galaxy Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
 --Loaded
 OrionLib:MakeNotification({
-	Name = "Loaded",
-	Content = "Enjoy the Hub!",
-	Image = "rbxassetid://4483345998",
-	Time = 5
+    Name = "Loaded",
+    Content = "Enjoy the Hub!",
+    Image = "rbxassetid://4483345998",
+    Time = 5
 })
 --General
 local General = Window:MakeTab({
-	Name = "General",
-	Icon = "rbxassetid://4483345998",
-	PremiumOnly = false
+    Name = "General",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+General:AddButton({
+    Name = "Test Button 101",
+    Callback = function()
+              print("TEST PASSED")
+      end    
 })
