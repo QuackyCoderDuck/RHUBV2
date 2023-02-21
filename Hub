@@ -20,9 +20,3 @@ local General = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
-General:AddButton({
-	Name = "Test Button 101",
-	Callback = function()
-      		print("TEST PASSED")
-  	end    
-})
