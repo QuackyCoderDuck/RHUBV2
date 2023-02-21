@@ -22,8 +22,8 @@ local General = Window:MakeTab({
   })
  --General Stuff
 General:AddButton({
-	Name = "Infinite Yield",
+	Name = "Speed",
 	Callback = function()
-      		loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+      		local speed = 300
   	end    
 })
