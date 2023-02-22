@@ -1,15 +1,3 @@
---game.StarterGui:SetCore("SendNotification", {
-        Title = "ur mom";
-        Text = "no"; -- what the text says (ofc)
-        Duration = 5;
-    })
-    wait(5)
-    game.StarterGui:SetCore("SendNotification", {
-        Title = "Title here";
-        Text = "text here"; -- what the text says (ofc)
-        Duration = 3;
-
-})
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 game.StarterGui:SetCore("SendNotification", {
         Title = "LOADING SCRIPT";
