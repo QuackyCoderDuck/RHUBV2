@@ -12,16 +12,13 @@
 })
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 game.StarterGui:SetCore("SendNotification", {
-        Title = "LOADING SCRIPT
-        Text = "Please hold while the script loads");
+        Title = "LOADING SCRIPT";
+        Text = "Please hold while the script loads";
         Duration = 5;
-    })
-    wait (3)
+wait(3)
 local Window = Library.CreateLib("Galaxy Hub", "Midnight")
 --General
 local General = Tab:NewSection("General")
 General:NewButton("Infinite Yield", "Infinite Yield Launcher", function()
-    print ("Loading Infinite Yield)
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-    print ("Infinite Yield Has Loaded!")
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
