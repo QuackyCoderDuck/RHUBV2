@@ -1,14 +1,3 @@
-OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-OrionLib:MakeNotification({
-    Name = "Loading!",
-    Content = "Loading the hub! Please wait!!",
-    Image = "rbxassetid://4483345998",
-    Time = 5
-})
-Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, IntroEnabled=true, IntroText = "Galaxy Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
-General = Window:MakeTab({
-    Name = "General",
-    Icon = "rbxassetid://4483345998",
-    PremiumOnly = false
-})
-
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Galaxy Hub", "Midnight")
+local Main = Window:NewTab("General")
