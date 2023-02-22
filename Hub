@@ -1,12 +1,26 @@
-local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-game.StarterGui:SetCore("SendNotification", {
-        Title = "LOADING SCRIPT";
-        Text = "Please hold while the script loads";
-        Duration = 5;
-wait(3)
-local Window = Library.CreateLib("Galaxy Hub", "Midnight")
---General
-local General = Tab:NewSection("General")
-General:NewButton("Infinite Yield", "Infinite Yield Launcher", function()
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
+OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+    Name = "Loading!",
+    Content = "Loading the hub! Please wait!!",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
+Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, IntroEnabled=true, IntroText = "Galaxy Hub", SaveConfig = true, ConfigFolder = "OrionTest"})
+General = Window:MakeTab({
+    Name = "General",
+    Icon = "rbxassetid://4483345998",
+    PremiumOnly = false
+})
+
+General:AddButton({
+    Name = "Test Button 101",
+    Callback = function()
+              print("TEST PASSED")
+      end    
+})
+OrionLib:MakeNotification({
+    Name = "Loaded",
+    Content = "Enjoy the Hub!",
+    Image = "rbxassetid://4483345998",
+    Time = 5
+})
