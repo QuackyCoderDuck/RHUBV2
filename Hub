@@ -12,15 +12,3 @@ General = Window:MakeTab({
     PremiumOnly = false
 })
 
-General:AddButton({
-    Name = "Test Button 101",
-    Callback = function()
-              print("TEST PASSED")
-      end    
-})
-OrionLib:MakeNotification({
-    Name = "Loaded",
-    Content = "Enjoy the Hub!",
-    Image = "rbxassetid://4483345998",
-    Time = 5
-})
