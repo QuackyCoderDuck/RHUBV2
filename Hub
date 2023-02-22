@@ -16,6 +16,7 @@ game.StarterGui:SetCore("SendNotification", {
         Text = "Please hold while the script loads");
         Duration = 5;
     })
+    wait (3)
 local Window = Library.CreateLib("Galaxy Hub", "Midnight")
 --General
 local General = Tab:NewSection("General")
