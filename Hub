@@ -1,2 +1,4 @@
 OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Galaxy Hub", HidePremium = false, IntroEnabled = true, IntroText = Galaxy Hub, IntroIcon = https://cdn.discordapp.com/attachments/1006762285819244645/1078095952981790730/image.png, Icon=https://cdn.discordapp.com/attachments/1006762285819244645/1078096488070139945/image.png,  SaveConfig = true, ConfigFolder = "OrionTest"})
+
+local Window = OrionLib:MakeWindow({Name = "Title of the library", HidePremium = false, SaveConfig = true, ConfigFolder = "OrionTest"})
+
