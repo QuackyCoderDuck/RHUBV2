@@ -11,7 +11,7 @@ game.StarterGui:SetCore("SendNotification", {
         wait (5)
 })
     print("Executing Infinite Yield")
-    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
     print ("Executed Infinite Yield!")
     game.StarterGui:SetCore("SendNotification", {
         Title = "Infinite Yield Executed";
