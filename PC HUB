@@ -3,8 +3,8 @@ local General = Library.CreateLib("Nightshade", "Synapse")
 
 --General Tab
 local Tab = General:NewTab("General")
-local Main = Tab:NewSection("Main")
-Main:NewButton("Infinite Yield", "Toggles Infinite Yield", function()
+local Section = Tab:NewSection("Main")
+Section:NewButton("Infinite Yield", "Toggles Infinite Yield", function()
 game.StarterGui:SetCore("SendNotification", {
         Title = "Executing Infinite Yield";
         Text = "Please wait while this executes!"; -- what the text says (ofc)
