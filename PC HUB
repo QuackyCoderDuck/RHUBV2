@@ -18,4 +18,5 @@ game.StarterGui:SetCore("SendNotification", {
         Text = "Infinite Yield has been executed. If you are having issues, please contact marker#3209"; 
         Duration = 3;
         wait (5)
+        })
 end)
