@@ -1,5 +1,5 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local General = Library.CreateLib("Nightshade", "Midnight")
+local General = Library.CreateLib("Nightshade", "Synapse")
 
 --General Tab
 local Tab = General:NewTab("General")
