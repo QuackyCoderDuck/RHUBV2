@@ -1,1 +1,19 @@
+local Prefix = '.'
+local Command = function(cmd)
+    return Arg1 == Prefix..cmd
+end
+local Chatted2 = function(Message)
+    Split = Message:split(' ')
+    Arg1, Arg2 = Split[1], Split[2]
 
+    if Command('TEST_KEY') then
+        if Arg2 == 'Mobile' then
+            print('Loading Mobile Hub')
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/QuackyCoderDuck/RHUBV2/main/Mobile%20Hub"))()
+            print(Loaded Mobile Hub')
+        elseif Arg2 == 'OFF' then
+            print('PC is currently offline please hold')
+        end
+    end
+end
+game:GetService('Players').LocalPlayer.Chatted:Connect(Chatted2)
