@@ -14,7 +14,7 @@ local Window = OrionLib:MakeWindow({
             IntroIcon = "https://cdn.discordapp.com/attachments/1006762285819244645/1078095952981790730/image.png", 
             Icon= "https://cdn.discordapp.com/attachments/1006762285819244645/1078096488070139945/image.png", 
             SaveConfig = true, 
-            ConfigFolder = "OrionTest"
+            ConfigFolder = "Nightshade Hub"
             })
             
 OrionLib:MakeNotification({
