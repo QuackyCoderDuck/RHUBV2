@@ -5,7 +5,7 @@ local General = Window:MakeTab({
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-Tab:AddToggle({
+General:AddToggle({
     Name = "Speed 100",
     Default = false,
     Callback = function(Value)
