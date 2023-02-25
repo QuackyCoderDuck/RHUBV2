@@ -1,15 +1,41 @@
 OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
-local Window = OrionLib:MakeWindow({Name = "Nightshade Hub", HidePremium = false, IntroEnabled = true, IntroText = "Nightshade Hub", IntroIcon = "https://cdn.discordapp.com/attachments/1006762285819244645/1078095952981790730/image.png", Icon="https://cdn.discordapp.com/attachments/1006762285819244645/1078096488070139945/image.png", SaveConfig = true, ConfigFolder = "OrionTest"})
+OrionLib:MakeNotification({
+	Name = "Loading!",
+	Content = "Loading Nightshade Hub Please Wait!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+local Window = OrionLib:MakeWindow({
+            Name = "Nightshade Hub", 
+            HidePremium = false,IntroEnabled = true, 
+            IntroText = "Nightshade Hub", 
+            IntroIcon = "https://cdn.discordapp.com/attachments/1006762285819244645/1078095952981790730/image.png", 
+            Icon="https://cdn.discordapp.com/attachments/1006762285819244645/1078096488070139945/image.png", 
+            SaveConfig = true, 
+            ConfigFolder = "OrionTest"
+            })
+            
+OrionLib:MakeNotification({
+	Name = "Loaded!",
+	Content = "Enjoy the Hub!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 local General = Window:MakeTab({
     Name = "General",
     Icon = "rbxassetid://4483345998",
     PremiumOnly = false
 })
-General:AddToggle({
-    Name = "Speed 100",
-    Default = false,
-    Callback = function(Value)
-        print(executing)
-    local speed = 100
-    end    
+General:AddButton({
+	Name = "Infinite Yield",
+	Callback = function()
+      		print("Infinite Yield Loading")
+            loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+            print("Infinite Yield Loaded")
+            
+  	end    
 })
+
+OrionLib:Init()
