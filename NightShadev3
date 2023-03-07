@@ -1,6 +1,46 @@
+--Made by marker and crow
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+OrionLib:MakeNotification({
+	Name = "Loading!",
+	Content = "Loading....",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
 local Window = OrionLib:MakeWindow({
 			Name = "NightShade V3",
-			HidePremium = false, SaveConfig = true, 
-			ConfigFolder = "NightShadeV3"}),
-			
+			HidePremium = false, 
+			SaveConfig = true, 
+			ConfigFolder = "NightShadeV3"
+			IntroEnabled = true,
+			IntroText = "NightShade Hub",
+			IntroIcon = "https://cdn.discordapp.com/icons/1079638686121082910/cfdf78b43fb1ec68cf64478ccd27507d.png?size=4096",
+			Icon = "https://cdn.discordapp.com/icons/1079638686121082910/cfdf78b43fb1ec68cf64478ccd27507d.png?size=4096"
+			})
+OrionLib:MakeNotification({
+	Name = "Loaded!",
+	Content = "NightShade v3 has loaded",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+
+--Tabs			
+local General = Window:MakeTab({
+	Name = "General",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--Scripts
+General:AddSlider({
+	Name = "Speed",
+	Min = 0,
+	Max = 1000,
+	Default = 5,
+	Color = Color3.fromRGB(255,255,255),
+	Increment = 1,
+	ValueName = "Speed",
+	Callback = function(Value)
+		print(Speed)
+		local speed = Speed
+	end    
+})
