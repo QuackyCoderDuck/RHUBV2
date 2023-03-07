@@ -1,21 +1,6 @@
-loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
-local Mercury = loadstring(game:HttpGet("https://raw.githubusercontent.com/deeeity/mercury-lib/master/src.lua"))()
-local GUI = Mercury:Create{
-    Name = "NightShade Hub",
-    Size = UDim2.fromOffset(600, 400),
-    Theme = Mercury.Themes.Dark,
-    Link = "https://discord.gg/B6W39g6gw5b"
-}
-local General = GUI:Tab{
-	Name = "General",
-	Icon = "rbxassetid://8569322835"
-}
-
-General:Button{
-	Name = "Infinite Yield",
-	Description = "Executes Infinite Yield",
-	Callback = function() 
-   print("executing")
-   loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
-   end
-}
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({
+			Name = "NightShade V3",
+			HidePremium = false, SaveConfig = true, 
+			ConfigFolder = "NightShadeV3"}),
+			
