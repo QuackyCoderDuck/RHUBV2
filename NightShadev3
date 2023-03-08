@@ -11,7 +11,7 @@ local Window = OrionLib:MakeWindow({
 			Name = "NightShade V3",
 			HidePremium = false, 
 			SaveConfig = true, 
-			ConfigFolder = "NightShadeV3"
+			ConfigFolder = "NightShadeV3",
 			IntroEnabled = true,
 			IntroText = "NightShade Hub",
 			IntroIcon = "https://cdn.discordapp.com/icons/1079638686121082910/cfdf78b43fb1ec68cf64478ccd27507d.png?size=4096",
