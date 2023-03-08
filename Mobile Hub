@@ -1,1 +1,1 @@
-game.Players:FindFirstChild(name):Kick("Kicked through NightShade")
+game.Players.LocalPlayer:Kick("Our Hub is under maintenance please join our discord to get updates")
