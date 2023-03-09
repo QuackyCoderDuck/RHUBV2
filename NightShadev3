@@ -3,7 +3,7 @@ local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shl
 OrionLib:MakeNotification({
 	Name = "Loading!",
 	Content = "Loading....",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://12726726148",
 	Time = 5
 })
 
@@ -14,13 +14,13 @@ local Window = OrionLib:MakeWindow({
 			ConfigFolder = "NightShadeV3",
 			IntroEnabled = true,
 			IntroText = "NightShade Hub",
-			IntroIcon = "https://cdn.discordapp.com/icons/1079638686121082910/cfdf78b43fb1ec68cf64478ccd27507d.png?size=4096",
-			Icon = "https://cdn.discordapp.com/icons/1079638686121082910/cfdf78b43fb1ec68cf64478ccd27507d.png?size=4096"
+			IntroIcon = "rbxassestid://12726726148",
+			Icon = "rbxassetid://12726726148"
 			})
 OrionLib:MakeNotification({
 	Name = "Loaded!",
 	Content = "NightShade v3 has loaded",
-	Image = "rbxassetid://4483345998",
+	Image = "rbxassetid://12726726148",
 	Time = 5
 })
 
