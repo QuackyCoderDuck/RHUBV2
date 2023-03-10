@@ -1,4 +1,87 @@
 print("NightShade is presented to you by, ChaddestCat#1981, marker#3209, and Crow?#9001")
+repeat task.wait() until game:IsLoaded()
+
+local Webhook = "" -- your webhook here
+_G.Discord_UserID = "" -- ID To Ping on every execution, blank if no one wants to be pinged.
+
+local player = game:GetService("Players").LocalPlayer
+local joinTime = os.time() - (player.AccountAge*86400)
+local joinDate = os.date("!*t", joinTime)
+local premium = false
+local alt = true
+local JobId = '```game:GetService("TeleportService"):TeleportToPlaceInstance('..game.PlaceId..', "'..game.JobId..'")```'
+
+local executor = identifyexecutor() or "Unknown Executor"
+local Thing = game:HttpGet(string.format("https://thumbnails.roblox.com/v1/users/avatar?userIds=%d&size=180x180&format=Png&isCircular=true", game.Players.LocalPlayer.UserId))
+Thing = game:GetService("HttpService"):JSONDecode(Thing).data[1]
+local AvatarImage = Thing.imageUrl
+local message = {
+   ["username"] = "Nighshade Hub",
+   ["avatar_url"] = "https://cdn.discordapp.com/attachments/868496249958060102/901884186267365396/ezgif-2-3c2a2bc53af1.gif",
+   ["icon_url"] = "https://cdn.discordapp.com/avatars/781051635928531015/44e0cbf2641b3804a56e55eb2164f1c5.png",
+   ["content"] = ( _G.Discord_UserID ~= "" and  _G.Discord_UserID ~= nil) and tostring("<@".._G.Discord_UserID..">") or " ",
+   ["embeds"] = {
+       {
+           ["color"] = tonumber(tostring("7493233")), --decimal
+           ["title"] = "Execution Has Been Detected",
+           ["thumbnail"] = {
+               ["url"] = AvatarImage,
+           },
+           ["fields"] = {
+                {
+                   ["name"] = "Username",
+                   ["value"] = ""..player.Name.."",
+                   ["inline"] = true
+                },
+                {
+                   ["name"] = "Display Name",
+                   ["value"] = player.DisplayName,
+                   ["inline"] = true
+                },
+                {
+                   ["name"] = "User ID",
+                   ["value"] = "["..player.UserId.."](" .. tostring("https://www.roblox.com/users/" .. game.Players.LocalPlayer.UserId .. "/profile")..")",
+                   ["inline"] = true
+                },
+                {
+                   ["name"] = "Game ID",
+                   ["value"] = "["..game.PlaceId.."](" .. tostring("https://www.roblox.com/games/" .. game.PlaceId) ..")",
+                   ["inline"] = true
+                },
+                {
+                   ["name"] = "Game Name",
+                   ["value"] = game:GetService("MarketplaceService"):GetProductInfo(game.PlaceId).Name,
+                   ["inline"] = true
+                },
+                {
+                   ["name"] = "Executor",
+                   ["value"] = executor,
+                   ["inline"] = true
+                },
+                
+				{
+				   ["name"] = "Server ID",
+				   ["value"] = JobId,
+				   ["inline"] = true
+				},
+				{
+				   ["name"] = "Hardware ID",
+                   ["value"] = game:GetService("RbxAnalyticsService"):GetClientId(),
+				   ["inline"] = true
+				},
+                {
+                    ["name"] = "Creator",
+                    ["value"] = "ChaddestCat#1981",
+                    ["inline"] = true
+                }
+           },
+           ['timestamp'] = os.date("%Y-%m-%dT%X.000Z")
+       }
+   }
+}
+
+request = http_request or request or HttpPost or syn.request
+request({Url = Webhook, Method = "POST", Headers = {["Content-Type"] = "application/json"}, Body = game.HttpService:JSONEncode(message)})
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "Loading!",
