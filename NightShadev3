@@ -1,4 +1,4 @@
---Made by marker and crow
+print("NightShade is presented to you by, ChaddestCat#1981, marker#3209, and Crow?#9001")
 local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
 OrionLib:MakeNotification({
 	Name = "Loading!",
@@ -30,7 +30,139 @@ local General = Window:MakeTab({
 	Icon = "rbxassetid://4483345998",
 	PremiumOnly = false
 })
---Scripts
+local A = Window:MakeTab({
+	Name = "A",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local B = Window:MakeTab({
+	Name = "B",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local C = Window:MakeTab({
+	Name = "C",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local D = Window:MakeTab({
+	Name = "D",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local E = Window:MakeTab({
+	Name = "E",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local F = Window:MakeTab({
+	Name = "F",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local G = Window:MakeTab({
+	Name = "G",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local H = Window:MakeTab({
+	Name = "H",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local I = Window:MakeTab({
+	Name = "I",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local J = Window:MakeTab({
+	Name = "J",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local K = Window:MakeTab({
+	Name = "K",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local L = Window:MakeTab({
+	Name = "L",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local M = Window:MakeTab({
+	Name = "M",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local N = Window:MakeTab({
+	Name = "N",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local O = Window:MakeTab({
+	Name = "O",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local P = Window:MakeTab({
+	Name = "P",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Q = Window:MakeTab({
+	Name = "Q",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local R = Window:MakeTab({
+	Name = "R",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local S = Window:MakeTab({
+	Name = "S",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local T = Window:MakeTab({
+	Name = "T",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local U = Window:MakeTab({
+	Name = "U",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local V = Window:MakeTab({
+	Name = "V",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local W = Window:MakeTab({
+	Name = "W",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local X = Window:MakeTab({
+	Name = "X",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Y = Window:MakeTab({
+	Name = "Y",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Z = Window:MakeTab({
+	Name = "Z",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+
+
+--Script
 General:AddSlider({
 	Name = "Speed",
 	Min = 0,
